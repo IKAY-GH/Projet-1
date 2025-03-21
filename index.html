@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="Author" content="Ridouane, Jonathan, Annick">
@@ -7,64 +8,158 @@
     <title>Wild Eats</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    
-<!-- /* ---------------------- HEADER ---------------------- */ -->
+    <header></header>
+    <main>
+        <section class="A_propos">
+            <h2>A propos...</h2>
+            <img src="Image/Design sans titre.png" alt="Logo wilder affamé">
+            <h3>Que faisons nous ici?</h3>
+            <p>Un Wilder qui travail est un wilder qui a faim!
+                En quête de nourriture afin de retrouver toute sa lucidité durant
+                les cours, le wilder trouvera à proximité de son centre de formation pléthore possibilitées pour se
+                restaurer. Mais comment faire pour choisir? Ce site filtre et répertorit toutes les bonnes petites
+                adresses dénichées par les wilders eux mêmes qui sauront satisfaire les estomacs les plus exigeants.
+                A taaaaaaaaable! </p>
+        </section>
+        <section class="Les_restaurants">
+            <h2>Les restaurants</h2>
+            <div class="Filtres">
+
+                <div class="Filtre_catégorie">
+
+                    <select name="Catégorie" id="Catégorie">
+                        <option value="Select Catégorie">--Select Catégorie--</option>
+                        <option value="Végétarien">Végétarien</option>
+                        <option value="Asiatique">Asiatique</option>
+                        <option value="Grec">Grec</option>
+                        <option value="Kebab">Kebab</option>
+                        <option value="Libanais">Libanais</option>
+                        <option value="Américain">Américain</option>
+
+                    </select>
+                </div>
+                <div class="Filtre_prix">
+                    <select name="Prix" id="Prix">
+                        <option value="Select_Prix">--Select Prix--</option>
+                        <option value="1_10">Entre 1 et 10 Euros</option>
+                        <option value="10_20">Entre 10 et 20 Euros</option>
+                        <option value="20_30">Entre 10 et 30 Euros</option>
+                        <option value="+30">Plus de 30</option>
+                    </select>
+                </div>
+
+
+
+                <div class="Filtre_localisation">
+                    <select name="Localisation" id="Localisation">
+                        <option value="Select_Localisation">--Select Localisation--</option>
+                        <option value="-100">Moins de 100 m</option>
+                        <option value="100_500">Entre 100 et 500 m</option>
+                        <option value="500_1km">Entre 500 m et 1km</option>
+                        <option value="+1km">Plus de 1km</option>
+
+                    </select>
+                </div>
+
+                <div class="Filtre_Note">
+                    <select name="Note" id="Note">
+                        <option value="Select_Note">--Select Note--</option>
+                        <option value="1_5">Entre 1 et 5/10</option>
+                        <option value="5_10">Entre 5 et 10/10</option>
+                    </select>
+                </div>
+                <div class="Trier_par...">
+                    <select name="Tri" id="Tri">
+                        <option value="Trier_par...">--Trier par...--</option>
+                        <option value="Catégorie">Catégorie</option>
+                        <option value="Prix">Prix</option>
+                        <option value="Localisation">Localisation</option>
+                        <option value="Note">Note</option>
+                    </select>
+                </div>
+
+                <div class="Restaurants">
+                    <h3>Restaurant 1</h3>
+                </div>
+                <div class="Restaurants">
+                    <h3>Restaurant 2</h3>
+                </div>
+                <div class="Restaurants">
+                    <h3>Restaurant 3</h3>
+                </div>
+                <div class="Restaurants">
+                    <h3>Restaurant 4</h3>
+                </div>
+
+        </section>
+
+        <footer></footer>
+    </main>
+
+    <!-- /* ---------------------- HEADER ---------------------- */ -->
 
     <header>
         <nav class="navbar">
             <img src="images/logo.svg" alt="logo" class="logo">
             <div class="nav_links">
-            <ul>
-                <li><a href="#">À propos ?</a></li>
-                <li><a href="#">Random Wild</a></li>
-                <li><a href="#">Les restaurants</a></li>
-                <li><a href="#">La map</a></li>
-            </ul>
-        </div>
-        <img src="images/menu-btn.png" alt="menu" class="menu_hamburger">
+                <ul>
+                    <li><a href="#">À propos ?</a></li>
+                    <li><a href="#">Random Wild</a></li>
+                    <li><a href="#">Les restaurants</a></li>
+                    <li><a href="#">La map</a></li>
+                </ul>
+            </div>
+            <img src="images/menu-btn.png" alt="menu" class="menu_hamburger">
         </nav>
     </header>
 
-<h1>Random Wild Section</h1>
+    <h1>Random Wild Section</h1>
     </head>
-    <body> 
-        
- <!-- Ajout de l'image -->
-    
+
+    <body>
+
+        <!-- Ajout de l'image -->
+
         <h2>Laisse toi surprendre !</h2>
-       
-        
-       <button class="btn">Random Wild</button>
-    
-       <p>Envie de pimenter votre journée et de laisser le hasard décider de votre repas ? </p>
 
-     <p>🍴 Cliquez sur ce bouton et laissez-le choisir pour vous parmi une sélection de restaurants ! </p>
-            
-     <p>Qui sait, peut-être que le destin vous réserve une découverte gourmande inattendue.
-     À vous de jouer ! 🎲</p> 
 
-    <h2>Les Restaurant a la carte</h2>
+        <button class="btn">Random Wild</button>
 
-    <div class="carte">
-        <img src="./ Petite.jpeg" alt="Photo de profil" class="photo">
-        <h2>restaurant la wild gastronomie</h2>
-        <p>Email : jean.dupont@example.com</p>
-        <p>Téléphone : +33 6 12 34 56 78</p>
-        <p>Site Web : <a href="https://www.jeandupont.com">jeandupont.com</a></p>
-    </div>
-             
+        <p>Envie de pimenter votre journée et de laisser le hasard décider de votre repas ? </p>
+
+        <p>🍴 Cliquez sur ce bouton et laissez-le choisir pour vous parmi une sélection de restaurants ! </p>
+
+        <p>Qui sait, peut-être que le destin vous réserve une découverte gourmande inattendue.
+            À vous de jouer ! 🎲</p>
+
+        <h2>Les Restaurant a la carte</h2>
+
+        <div class="carte">
+            <img src="./ Petite.jpeg" alt="Photo de profil" class="photo">
+            <h2>restaurant la wild gastronomie</h2>
+            <p>Email : jean.dupont@example.com</p>
+            <p>Téléphone : +33 6 12 34 56 78</p>
+            <p>Site Web : <a href="https://www.jeandupont.com">jeandupont.com</a></p>
+        </div>
+
     </body>
-    </html>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.501868334547!2d1.4527131757069711!3d43.59609105612333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebc8f1f291b55%3A0x43998e6b94a73c41!2s8%20Rue%20de%20Valenciennes%2C%2031000%20Toulouse!5e0!3m2!1sfr!2sfr!4v1742475338303!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-   
-  <!-- /* ---------------------- FOOTER ---------------------- */ -->
+</html>
 
-  <footer>
+<iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.501868334547!2d1.4527131757069711!3d43.59609105612333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebc8f1f291b55%3A0x43998e6b94a73c41!2s8%20Rue%20de%20Valenciennes%2C%2031000%20Toulouse!5e0!3m2!1sfr!2sfr!4v1742475338303!5m2!1sfr!2sfr"
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<!-- /* ---------------------- FOOTER ---------------------- */ -->
+
+<footer>
     <p>Fait avec amour par nos Wilders</p>
     <nav class="nav_footer">
         <ul>
