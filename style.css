@@ -1,29 +1,6 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-body {
-    font-family: "Montserrat", sans-serif;
-    padding: 4rem;
 
-}
-
-.btn {
-    position:absolute;
-    right: 10%;
-    background-color: blueviolet;
-    color: white ;
-     padding: 20px 20px;
-     box-shadow: 10px 5px 5px blueviolet;
-border-radius: 30px;
-
-}
-h2 {
-    text-align: center;
-
-
-}
-
-=======
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -163,8 +140,23 @@ table {
 /* Au dessus de cette ligne, le reset CSS de Meyerweb */
 /* En dessous de cette ligne, mon CSS */
 
+.btn {
+    position: absolute;
+    right: 10%;
+    background-color: blueviolet;
+    color: white;
+    padding: 20px 20px;
+    box-shadow: 10px 5px 5px blueviolet;
+    border-radius: 30px;
+}
+
+h2 {
+    text-align: center;
+}
+
 body {
-    font-family: "Source Sans 3", sans-serif;    
+    font-family: "Source Sans 3", sans-serif;
+    padding: 4rem;
 }
 
 h1,
@@ -173,14 +165,14 @@ h3 {
     font-family: "Montserrat", sans-serif;
 }
 
-header{
+header {
     height: 50vh;
     width: 100vw;
     background-image: url("images/image_header.jpg");
     background-color: rgba(59, 3, 39, 0.834);
     background-size: cover;
     background-position: right;
-    background-blend-mode: overlay;    
+    background-blend-mode: overlay;
 }
 
 .navbar {
@@ -188,7 +180,7 @@ header{
     justify-content: space-between;
     padding: 25px;
     align-items: center;
-   
+
 }
 
 .navbar a {
@@ -213,18 +205,24 @@ header{
     top: 25px;
     right: 30px;
     width: 30px;
-    
+
 }
 
 @media screen and (max-width: 320px) {
     .navbar .menu_hamburger {
         display: block;
     }
+
     .nav_links {
         position: absolute;
         display: flex;
         flex-direction: column;
     }
-    
+
 }
->>>>>>> footer
+
+footer {
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+}
