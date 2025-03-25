@@ -152,10 +152,26 @@ table {
 
 h2 {
     text-align: center;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #a306b6;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 1.2rem;
 }
 
 body {
     font-family: "Source Sans 3", sans-serif;
+    line-height: 1.5;
+}
+
+main {
+    max-width: 90ch;
+    margin: 0 auto;
 }
 
 h1,
@@ -179,7 +195,6 @@ header {
     justify-content: space-between;
     padding: 25px;
     align-items: center;
-
 }
 
 .navbar a {
@@ -206,6 +221,21 @@ header {
     width: 30px;
 
 }
+footer {
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+}
+
+.container_à-propos{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.logo_a-propos {
+    object-fit: contain;
+}
 
 @media screen and (max-width: 320px) {
     .navbar .menu_hamburger {
@@ -217,11 +247,5 @@ header {
         display: flex;
         flex-direction: column;
     }
-
 }
 
-footer {
-    padding: 0;
-    margin: 0;
-    font-size: 40px;
-}
