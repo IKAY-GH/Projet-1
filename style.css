@@ -181,12 +181,15 @@ h3 {
 }
 
 header {
+
+
     height: 50vh;
     width: 100vw;
     background-image: url("images/image_header.jpg");
-    background-color: rgba(59, 3, 39, 0.834);
-    background-size: cover;
-    background-position: right;
+    background-color: rgba(121, 21, 86, 0.834);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     background-blend-mode: overlay;
 }
 
@@ -248,4 +251,3 @@ footer {
         flex-direction: column;
     }
 }
-
