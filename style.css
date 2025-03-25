@@ -180,6 +180,20 @@ h3 {
     font-family: "Montserrat", sans-serif;
 }
 
+h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    padding: 20px;
+    
+    
+}
+
 header {
 
 
@@ -207,13 +221,13 @@ header {
 }
 
 .navbar .logo {
-    width: 3rem;
+    width: 4rem;
 }
 
 .navbar .nav_links ul {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
     display: flex;
-    gap: 10px;
+    gap: 60px;
 }
 
 .navbar .menu_hamburger {
@@ -240,14 +254,53 @@ footer {
     object-fit: contain;
 }
 
-@media screen and (max-width: 320px) {
+
+@media screen and (max-width: 480px) {
+    .navbar{
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    .navbar .logo {
+        padding: 25px;
+    }
+
     .navbar .menu_hamburger {
         display: block;
     }
 
     .nav_links {
+        top: 0;
+        height: 50vh;
         position: absolute;
+        background-color: rgba(255, 255, 255, 0.073);
+        backdrop-filter: blur(10px);
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+
+    .nav_links.mobile-menu {
+        margin-left: 0;
+    }
+
+    .nav_links ul {
         display: flex;
         flex-direction: column;
     }
+
+   
+
+   .navbar .nav_links ul {
+    gap: 65px;
+    font-size: 0.8rem;
+   }
 }
+
