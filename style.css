@@ -141,21 +141,21 @@ table {
 /* En dessous de cette ligne, mon CSS */
 
 .btn {
-    position: absolute;
-    right: 10%;
-    background-color: blueviolet;
-    color: white;
-    padding: 20px 20px;
-    box-shadow: 10px 5px 5px blueviolet;
+    background-color: white;
+    color: #a306b6;
+    padding: 10px 10px;
     border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 40px 0;
 }
 
 h2 {
     text-align: center;
-    margin-top: 70px;
-    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #a306b6;
 }
 
@@ -170,8 +170,9 @@ body {
 }
 
 main {
-    max-width: 90ch;
+    max-width: 85ch;
     margin: 0 auto;
+    padding: 30px;
 }
 
 h1,
@@ -181,7 +182,7 @@ h3 {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 800;
     color: white;
     line-height: 1;
@@ -189,9 +190,13 @@ h1 {
     justify-content: center;
     align-items: center;
     height: 80%;
-    padding: 20px;
-    
-    
+    padding: 20px;   
+}
+
+.italic {
+    font-style: italic;
+    font-weight: 550;
+    color: #a306b6;
 }
 
 header {
@@ -200,8 +205,8 @@ header {
     height: 50vh;
     width: 100vw;
     background-image: url("images/image_header.jpg");
-    background-color: rgba(121, 21, 86, 0.834);
-    background-size: contain;
+    background-color: rgba(50, 23, 40, 0.834);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-blend-mode: overlay;
@@ -236,17 +241,33 @@ header {
     top: 25px;
     right: 30px;
     width: 30px;
-
 }
-footer {
-    padding: 0;
-    margin: 0;
-    font-size: 40px;
+
+.random {
+    background-color: #a306b6;
+    color: white;    
+    padding: 25px;    
+    margin-top: 40px;    
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text_random {
+    max-width: 85ch;
+}
+
+.wild_heading {
+    color: white;
+    margin-top: 0;
 }
 
 .container_à-propos{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
     gap: 50px;
 }
 
@@ -254,16 +275,46 @@ footer {
     object-fit: contain;
 }
 
+footer {
+    padding: 10px;
+    margin: 0;
+    font-size: 1rem;
+    background-color: #a306b6;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 3;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo-wild-footer {
+    height: 3rem;
+    margin: 10px;
+}
+
+.nav_footer ul {
+    display: flex;
+    font-size: 0.9rem;
+    font-weight: 600;
+    gap: 20px;
+}
+
+.footer_contact a{
+    justify-content: space-between;
+    margin: 0 20px;   
+}
+
 
 @media screen and (max-width: 480px) {
     .navbar{
         padding: 0;
     }
-
-    h1 {
-        font-size: 1.5rem;
-    }
-    
+   
     .navbar .logo {
         padding: 25px;
     }
@@ -276,8 +327,8 @@ footer {
         top: 0;
         height: 50vh;
         position: absolute;
-        background-color: rgba(255, 255, 255, 0.073);
-        backdrop-filter: blur(10px);
+        background-color: rgba(56, 11, 31, 0.724);
+        backdrop-filter: blur(8px);
         width: 100vw;
         display: flex;
         justify-content: center;
@@ -299,8 +350,9 @@ footer {
    
 
    .navbar .nav_links ul {
-    gap: 65px;
-    font-size: 0.8rem;
+    gap: 55px;
+    font-size: 1rem;
+    font-weight: 700;
    }
 }
 
