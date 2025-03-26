@@ -272,7 +272,7 @@ header {
 }
 
 .logo_a-propos {
-    object-fit: contain;
+    height: 300px;
 }
 
 footer {
