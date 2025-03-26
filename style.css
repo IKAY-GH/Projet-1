@@ -172,7 +172,7 @@ body {
 main {
     max-width: 85ch;
     margin: 0 auto;
-    padding: 30px;
+    padding: 0 30px;
 }
 
 h1,
@@ -195,7 +195,7 @@ h1 {
 
 .italic {
     font-style: italic;
-    font-weight: 550;
+    font-weight: 700;
     color: #a306b6;
 }
 
@@ -243,8 +243,22 @@ header {
     width: 30px;
 }
 
+.a_table {
+    color: #a306b6;
+    font-weight: 800;
+    font-size: 1.9rem;
+    font-style: italic;
+    transform: rotate(-5deg);
+    font-family: "Sour Gummy", sans-serif;
+}
+
 .random {
-    background-color: #a306b6;
+    background-image: url("Image/close-up-smiley-friends-with-drinks.jpg");
+    background-color: rgba(50, 23, 40, 0.834);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: white;    
     padding: 25px;    
     margin-top: 40px;    
@@ -273,6 +287,15 @@ header {
 
 .logo_a-propos {
     height: 300px;
+}
+
+.map {
+    overflow: hidden;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 footer {
