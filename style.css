@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -87,12 +86,12 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -107,275 +106,269 @@ hgroup,
 menu,
 nav,
 section {
-    display: block;
+	display: block;
 }
 
 body {
-    line-height: 1;
+	line-height: 1;
 }
 
 ol,
 ul {
-    list-style: none;
+	list-style: none;
 }
 
 blockquote,
 q {
-    quotes: none;
+	quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: '';
-    content: none;
+	content: "";
+	content: none;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 /* Au dessus de cette ligne, le reset CSS de Meyerweb */
 /* En dessous de cette ligne, mon CSS */
 
 .btn {
-    background-color: white;
-    color: #a306b6;
-    padding: 10px 10px;
-    border-radius: 30px;
-    font-size: 1rem;
-    font-weight: 600;
-    margin: 40px 0;
+	background-color: white;
+	color: #a306b6;
+	padding: 10px 10px;
+	border-radius: 30px;
+	font-size: 1rem;
+	font-weight: 600;
+	margin: 40px 0;
 }
 
 h2 {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    font-weight: 700;
-    font-size: 2.5rem;
-    color: #a306b6;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	font-weight: 700;
+	font-size: 2.5rem;
+	color: #a306b6;
 }
 
 h3 {
-    font-weight: 600;
-    font-size: 1.2rem;
+	font-weight: 600;
+	font-size: 1.2rem;
 }
 
 body {
-    font-family: "Source Sans 3", sans-serif;
-    line-height: 1.5;
+	font-family: "Source Sans 3", sans-serif;
+	line-height: 1.5;
 }
 
 main {
-    max-width: 85ch;
-    margin: 0 auto;
-    padding: 0 30px;
+	max-width: 85ch;
+	margin: 0 auto;
+	padding: 0 30px;
 }
 
 h1,
 h2,
 h3 {
-    font-family: "Montserrat", sans-serif;
+	font-family: "Montserrat", sans-serif;
 }
 
 h1 {
-    font-size: 2.5rem;
-    font-weight: 800;
-    color: white;
-    line-height: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80%;
-    padding: 20px;   
+	font-size: 2.5rem;
+	font-weight: 800;
+	color: white;
+	line-height: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80%;
+	padding: 20px;
 }
 
 .italic {
-    font-style: italic;
-    font-weight: 700;
-    color: #a306b6;
+	font-style: italic;
+	font-weight: 700;
+	color: #a306b6;
 }
 
 header {
-
-
-    height: 50vh;
-    width: 100vw;
-    background-image: url("images/image_header.jpg");
-    background-color: rgba(50, 23, 40, 0.834);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-blend-mode: overlay;
+	height: 50vh;
+	width: 100vw;
+	background-image: url("images/image_header.jpg");
+	background-color: rgba(50, 23, 40, 0.834);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-blend-mode: overlay;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 25px;
-    align-items: center;
+	display: flex;
+	justify-content: space-between;
+	padding: 25px;
+	align-items: center;
 }
 
 .navbar a {
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
+	color: white;
+	text-decoration: none;
+	font-weight: 600;
 }
 
 .navbar .logo {
-    width: 4rem;
+	width: 4rem;
 }
 
 .navbar .nav_links ul {
-    font-size: 0.8rem;
-    display: flex;
-    gap: 60px;
+	font-size: 0.8rem;
+	display: flex;
+	gap: 60px;
 }
 
 .navbar .menu_hamburger {
-    display: none;
-    position: absolute;
-    top: 25px;
-    right: 30px;
-    width: 30px;
+	display: none;
+	position: absolute;
+	top: 25px;
+	right: 30px;
+	width: 30px;
 }
 
 .a_table {
-    color: #a306b6;
-    font-weight: 800;
-    font-size: 1.9rem;
-    font-style: italic;
-    transform: rotate(-5deg);
-    font-family: "Sour Gummy", sans-serif;
+	color: #a306b6;
+	font-weight: 800;
+	font-size: 1.9rem;
+	font-style: italic;
+	transform: rotate(-5deg);
+	font-family: "Sour Gummy", sans-serif;
 }
 
 .random {
-    background-image: url("Image/close-up-smiley-friends-with-drinks.jpg");
-    background-color: rgba(50, 23, 40, 0.834);
-    background-blend-mode: overlay;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: white;    
-    padding: 25px;    
-    margin-top: 40px;    
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	background-image: url("Image/close-up-smiley-friends-with-drinks.jpg");
+	background-color: rgba(50, 23, 40, 0.834);
+	background-blend-mode: overlay;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	color: white;
+	padding: 25px;
+	margin-top: 40px;
+	margin-left: calc(-50vw + 50%);
+	margin-right: calc(-50vw + 50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .text_random {
-    max-width: 85ch;
+	max-width: 85ch;
 }
 
 .wild_heading {
-    color: white;
-    margin-top: 0;
+	color: white;
+	margin-top: 0;
 }
 
-.container_à-propos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
+.container_à-propos {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 50px;
 }
 
 .logo_a-propos {
-    height: 300px;
+	height: 300px;
 }
 
 .map {
-    overflow: hidden;
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
+	overflow: hidden;
+	margin-left: calc(-50vw + 50%);
+	margin-right: calc(-50vw + 50%);
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
 }
 
 footer {
-    padding: 10px;
-    margin: 0;
-    font-size: 1rem;
-    background-color: #a306b6;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 3;
+	padding: 10px;
+	margin: 0;
+	font-size: 1rem;
+	background-color: #a306b6;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	line-height: 3;
 }
 
 footer a {
-    text-decoration: none;
-    color: white;
+	text-decoration: none;
+	color: white;
 }
 
 .logo-wild-footer {
-    height: 3rem;
-    margin: 10px;
+	height: 3rem;
+	margin: 10px;
 }
 
 .nav_footer ul {
-    display: flex;
-    font-size: 0.9rem;
-    font-weight: 600;
-    gap: 20px;
+	display: flex;
+	font-size: 0.9rem;
+	font-weight: 600;
+	gap: 20px;
 }
 
-.footer_contact a{
-    justify-content: space-between;
-    margin: 0 20px;   
+.footer_contact a {
+	justify-content: space-between;
+	margin: 0 20px;
 }
-
 
 @media screen and (max-width: 480px) {
-    .navbar{
-        padding: 0;
-    }
-   
-    .navbar .logo {
-        padding: 25px;
-    }
+	.navbar {
+		padding: 0;
+	}
 
-    .navbar .menu_hamburger {
-        display: block;
-    }
+	.navbar .logo {
+		padding: 25px;
+	}
 
-    .nav_links {
-        top: 0;
-        height: 50vh;
-        position: absolute;
-        background-color: rgba(56, 11, 31, 0.724);
-        backdrop-filter: blur(8px);
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin-left: -100%;
-        transition: all 0.5s ease;
-    }
+	.navbar .menu_hamburger {
+		display: block;
+	}
 
-    .nav_links.mobile-menu {
-        margin-left: 0;
-    }
+	.nav_links {
+		top: 0;
+		height: 50vh;
+		position: absolute;
+		background-color: rgba(56, 11, 31, 0.724);
+		backdrop-filter: blur(8px);
+		width: 100vw;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		margin-left: -100%;
+		transition: all 0.5s ease;
+	}
 
-    .nav_links ul {
-        display: flex;
-        flex-direction: column;
-    }
+	.nav_links.mobile-menu {
+		margin-left: 0;
+	}
 
-   
+	.nav_links ul {
+		display: flex;
+		flex-direction: column;
+	}
 
-   .navbar .nav_links ul {
-    gap: 55px;
-    font-size: 1rem;
-    font-weight: 700;
-   }
+	.navbar .nav_links ul {
+		gap: 55px;
+		font-size: 1rem;
+		font-weight: 700;
+	}
 }
-
