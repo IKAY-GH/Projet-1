@@ -23,3 +23,13 @@ selectCategory.addEventListener("change", (event) => {
 		lesRestaurants.appendChild(createCard(element));
 	}
 });
+
+// Attrape la zone des cartes restaurants
+
+const RestaurantsCards = document.querySelector(".RestaurantsCards")
+
+for (let i = 0; i<listRestaurants.length; i++) {
+    const restaurant = listRestaurants[i];
+
+    RestaurantsCards.appendChild(createCard(restaurant))
+}
