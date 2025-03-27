@@ -329,6 +329,11 @@ footer a {
 	margin: 0 20px;
 }
 
+.Filtres {
+	display: flex;
+	gap: 20px;
+}
+
 @media screen and (max-width: 480px) {
 	.navbar {
 		padding: 0;
