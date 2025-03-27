@@ -1,4 +1,4 @@
-const houseToRent = [
+const listRestaurants = [
 	{
 		name: "IZHACFOOD",
 		category: "Kébabs",
