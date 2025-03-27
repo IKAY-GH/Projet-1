@@ -52,8 +52,11 @@ newCardTextCategory.classList.add("card-title-text")
 
 // Gestion du contenu des éléments à partir de l'objet Restaurant
 newCardImg.src = 
+newCardImg.alt = "Image du restaurant"
 newCardTitle.textContent = 
+newCardTitle.alt = " Titre du restaurant"
 newCardDescription.textContent =
+newCardDescription.alt = "Description du restaurant"
 
 newCardTitleDistance.textContent =
 newCardTextDistance.textContent =
