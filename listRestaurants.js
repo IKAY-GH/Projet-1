@@ -27,7 +27,7 @@ const listRestaurants = [
 		price: "21€",
 		googlelink:
 			"https://www.google.com/search?client=firefox-b-d&sca_esv=6d6a8e16a9e96c37&si=APYL9btvhO6SAb8jF9HqTZMMa7vs_teLnZaEVrJZwRKFIIKjoU9hW50SjlZIVExM2spPKDEl3_v9ASP4CO4YcjTKYITFExq_rG89-6l5Lg4oeJuiCtJkrLZlpVqQ0o1XMeSa7YoHj0uf&q=Le+Ksar+Avis&sa=X&ved=2ahUKEwi0oq6iiKqMAxXLLPsDHTzFMHIQ0bkNegQILxAD&biw=1280&bih=587&dpr=1.5",
-		distance: "750km",
+		distance: "750m",
 		img: "Image/restaurants/woman-arab-dish-restaurant.jpg",
 	},
 	{
@@ -47,7 +47,7 @@ const listRestaurants = [
 		price: "25€",
 		googlelink:
 			"https://www.google.com/search?q=Le%20Kiosque%20Grand-Rond%20Avis&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxI2MzI2MzYzMDM1NzczMDU2NTSz3MDI-IpRyidVwTszv7iwNFXBvSgxL0U3KD8vRcGxLLN4ESseSQDe05N8VAAAAA&rldimm=6236360657760535169&tbm=lcl&client=firefox-b-d&cs=1&hl=fr&sa=X&ved=0CCQQ9fQKKABqFwoTCODH9NyIqowDFQAAAAAdAAAAABAG&biw=1280&bih=587&dpr=1.5#lkt=LocalPoiReviews",
-		distance: "300",
+		distance: "300m",
 		img: "Image/restaurants/rice-noodles-with-chicken-vegetables.jpg",
 	},
 
@@ -58,7 +58,7 @@ const listRestaurants = [
 		price: "18€",
 		googlelink:
 			"https://www.google.com/search?q=Forno%20Gusto%20Avis&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxK2MLc0Nrc0MjM2NzAwNLI0NTAy3sDI-IpRwC2_KC9fwb20uCRfwbEss3gRK4YQAFj8tBxAAAAA&rldimm=8793792637001295023&tbm=lcl&client=firefox-b-d&cs=1&hl=fr&sa=X&ved=0CCkQ9fQKKABqFwoTCPDUkvaIqowDFQAAAAAdAAAAABAG&biw=1280&bih=587&dpr=1.5#lkt=LocalPoiReviews",
-		distance: "280",
+		distance: "280m",
 		img: "Image/restaurants/pizza.jpg",
 	},
 ];

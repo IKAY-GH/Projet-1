@@ -11,3 +11,17 @@ menuHamburger.addEventListener('click',()=>{
 
 import createCard from "./createCard.js"
 import listRestaurants from "./listRestaurants.js"
+
+// Attrape la zone des cartes restaurants
+
+const RestaurantsCards = document.querySelector(".RestaurantsCards")
+
+
+
+
+
+for (let i = 0; i<listRestaurants.length; i++) {
+    const restaurant = listRestaurants[i];
+
+    RestaurantsCards.appendChild(createCard(restaurant))
+}
