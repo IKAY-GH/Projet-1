@@ -6,8 +6,20 @@ const menuHamburger = document.querySelector(".menu_hamburger");
 const navLinks = document.querySelector(".nav_links");
 const lesRestaurants = document.querySelector("#Les_restaurants");
 const RestaurantsCards = document.querySelector(".RestaurantsCards");
+const randomContainer = document.querySelector(".random-container");
+const button = document.querySelector(".btn");
+
 menuHamburger.addEventListener("click", () => {
 	navLinks.classList.toggle("mobile-menu");
+});
+
+button.addEventListener("click", () => {
+	const randomNumber = Math.ceil(Math.random() * listRestaurants.length);
+	const filteredRestaurant = listRestaurants.find(
+		(resto) => resto.id === randomNumber,
+	);
+	removeChildren(randomContainer);
+	randomContainer.appendChild(createCard(filteredRestaurant));
 });
 
 const createAllRestaurants = (array) => {

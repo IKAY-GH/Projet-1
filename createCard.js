@@ -3,7 +3,7 @@ function createCard(restaurant) {
 
 	const newCardRestaurant = document.createElement("div");
 	const newCardHeader = document.createElement("div");
-	const newCardImg = document.createElement("div");
+	const newCardImg = document.createElement("img");
 
 	const newCardBody = document.createElement("div");
 	const newCardTitle = document.createElement("h3");
@@ -23,6 +23,7 @@ function createCard(restaurant) {
 	const newCardTextCategory = document.createElement("p");
 
 	const newCardButton = document.createElement("button");
+	const newCardLink = document.createElement("a");
 
 	// Ajout des classes des éléments respectifs
 	newCardRestaurant.classList.add("Restaurant");
@@ -64,7 +65,9 @@ function createCard(restaurant) {
 	newCardTitleCategory.textContent = "Catégorie";
 	newCardTextCategory.textContent = restaurant.category;
 
-	newCardButton.textContent = "Visiter la page Google";
+	newCardLink.textContent = "Visiter la page Google";
+	newCardLink.href = restaurant.googlelink;
+	newCardLink.target = "_blank";
 
 	// Placements des éléments avec leur parent respectif
 	newCardRestaurant.appendChild(newCardHeader);
@@ -77,9 +80,9 @@ function createCard(restaurant) {
 	newCardBody.appendChild(newCardFeatures);
 	newCardBody.appendChild(newCardButton);
 
-	newCardFeatures.appendChild(newCardDistance)
-	newCardFeatures.appendChild(newCardPrice)
-	newCardFeatures.appendChild(newCardCategory)
+	newCardFeatures.appendChild(newCardDistance);
+	newCardFeatures.appendChild(newCardPrice);
+	newCardFeatures.appendChild(newCardCategory);
 
 	newCardDistance.appendChild(newCardTitleDistance);
 	newCardDistance.appendChild(newCardTextDistance);
@@ -90,9 +93,10 @@ function createCard(restaurant) {
 	newCardCategory.appendChild(newCardTitleCategory);
 	newCardCategory.appendChild(newCardTextCategory);
 
+	newCardButton.appendChild(newCardLink);
+
 	// On retourne la carte unique correspondant à l'objet passé en paramètre
 	return newCardRestaurant;
 }
-
 
 export default createCard;
