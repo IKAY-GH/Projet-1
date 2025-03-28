@@ -415,7 +415,7 @@ footer a {
 
 	footer {
 		flex-direction: row;
-		justify-content: center;
+		justify-content: space-between;
 	}
 
 	.nav_footer ul {
