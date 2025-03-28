@@ -328,7 +328,7 @@ footer a {
 
 .nav_footer ul {
 	display: flex;
-	font-size: 0.9rem;
+	font-size: 0.6rem;
 	font-weight: 600;
 	gap: 20px;
 }
