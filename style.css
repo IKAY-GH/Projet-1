@@ -313,6 +313,7 @@ footer a {
 
 .logo-wild-footer {
 	height: 3rem;
+	
 	margin: 10px;
 }
 
@@ -376,6 +377,40 @@ footer a {
 		gap: 55px;
 		font-size: 1rem;
 		font-weight: 700;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	header {
+		height: 80vh;
+	}
+
+	h1 {
+		font-size: 5rem;
+	}
+
+	.navbar .logo {
+		width: 8rem;
+	}
+
+	.nav_links li {
+       font-size: 1.3rem;
+	}
+	
+	.random {
+		padding: 150px;
+	}
+
+	h2 {
+		font-size: 3.5rem;
+	}
+
+	p {
+		font-size: 1.2rem;
+	}
+
+	.a_table {
+		font-size: 3rem;
 	}
 }
 
