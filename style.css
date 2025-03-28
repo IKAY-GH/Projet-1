@@ -297,14 +297,13 @@ header {
 
 footer {
 	padding: 10px;
-	margin: 0;
+	margin: 40px 0 0 0;
 	font-size: 1rem;
 	background-color: #a306b6;
 	color: white;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	line-height: 3;
 }
 
 footer a {
@@ -314,6 +313,7 @@ footer a {
 
 .logo-wild-footer {
 	height: 3rem;
+	
 	margin: 10px;
 }
 
@@ -413,3 +413,81 @@ footer a {
 	justify-content: flex-end;
 }
 
+@media screen and (min-width: 900px) {
+	header {
+		height: 80vh;
+	}
+
+	h1 {
+		font-size: 5rem;
+	}
+
+	.navbar .logo {
+		width: 8rem;
+	}
+
+	.nav_links li {
+       font-size: 1.3rem;
+	}
+	
+	.random {
+		padding: 150px;
+	}
+
+	h2 {
+		font-size: 3.5rem;
+	}
+
+	p {
+		font-size: 1.2rem;
+	}
+
+	.a_table {
+		font-size: 3rem;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	header {
+		height: 100vh;
+	}
+
+	h1 {
+		font-size: 4.5rem;
+		text-align: center;
+	}
+
+	.navbar .logo {
+		width: 6rem;
+	}
+
+	.nav_links li {
+		font-size: 1rem;
+	}
+
+	.random {
+		padding: 150px;
+	}
+
+	h2 {
+		font-size: 3.5rem;
+	}
+
+	p {
+		font-size: 1.2rem;
+	}
+
+	.a_table {
+		font-size: 3rem;
+	}
+
+	footer {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.nav_footer ul {
+		flex-direction: column;
+		gap: 0px;
+	}
+}
