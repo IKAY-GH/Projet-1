@@ -1,7 +1,7 @@
 function createCard(restaurant) {
 	// Création des éléments de la carte
 
-	const newCard = document.createElement("div");
+	const newCardRestaurant = document.createElement("div");
 	const newCardHeader = document.createElement("div");
 	const newCardImg = document.createElement("div");
 
@@ -25,7 +25,7 @@ function createCard(restaurant) {
 	const newCardButton = document.createElement("button");
 
 	// Ajout des classes des éléments respectifs
-	newCard.classList.add("Restaurant");
+	newCardRestaurant.classList.add("Restaurant");
 	newCardHeader.classList.add("card-header");
 	newCardImg.classList.add("card-img");
 
@@ -47,12 +47,12 @@ function createCard(restaurant) {
 	newCardTitleCategory.classList.add("card-title-item");
 	newCardTextCategory.classList.add("card-title-text");
 
-// Gestion du contenu des éléments à partir de l'objet Restaurant
+// Gestion du contenu des éléments à partir de l'objet listRestaurants
 newCardImg.src = restaurant.img
 newCardImg.alt = "Image du restaurant"
-newCardTitle.textContent = 
+newCardTitle.textContent = restaurant.name
 newCardTitle.alt = " Titre du restaurant"
-newCardDescription.textContent =
+newCardDescription.textContent =restaurant.description
 newCardDescription.alt = "Description du restaurant"
 
 newCardTitleDistance.textContent = "Distance";
@@ -67,8 +67,8 @@ newCardTextCategory.textContent = restaurant.category;
 newCardButton.textContent = "Visiter la page Google";
 
 	// Placements des éléments avec leur parent respectif
-	newCard.appendChild(newCardHeader);
-	newCard.appendChild(newCardBody);
+	newCardRestaurant.appendChild(newCardHeader);
+	newCardRestaurant.appendChild(newCardBody);
 
 	newCardHeader.appendChild(newCardImg);
 
@@ -76,6 +76,10 @@ newCardButton.textContent = "Visiter la page Google";
 	newCardBody.appendChild(newCardDescription);
 	newCardBody.appendChild(newCardFeatures);
 	newCardBody.appendChild(newCardButton);
+
+	newCardFeatures.appendChild(newCardDistance)
+	newCardFeatures.appendChild(newCardPrice)
+	newCardFeatures.appendChild(newCardCategory)
 
 	newCardDistance.appendChild(newCardTitleDistance);
 	newCardDistance.appendChild(newCardTextDistance);
@@ -87,7 +91,7 @@ newCardButton.textContent = "Visiter la page Google";
 	newCardCategory.appendChild(newCardTextCategory);
 
 	// On retourne la carte unique correspondant à l'objet passé en paramètre
-	return newCard;
+	return newCardRestaurant;
 }
 
 export default createCard;

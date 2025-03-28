@@ -379,4 +379,37 @@ footer a {
 		font-weight: 700;
 	}
 }
+/* <!-- ---------------------- CARDS RESTAURANTS ---------------------- --> */
+.RestaurantsCards {
+
+	
+	display: flex;
+	justify-content: space-between;
+    margin: 0;
+	flex-wrap: wrap;
+	
+
+
+}
+
+.Restaurant {
+    max-width: 85ch;
+    margin: 0 auto;
+    padding: 0;
+	display: flex;
+	border-radius: 30px;
+	background-color: #a306b6
+	
+	
+}
+
+.card-header {
+
+	justify-content: flex-start;
+}
+
+.card-body {
+
+	justify-content: flex-end;
+}
 
