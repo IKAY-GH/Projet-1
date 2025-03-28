@@ -12,7 +12,7 @@ const listRestaurants = [
 		img: "Image/restaurants/side-view-shawarma-with-fried-potatoes-board-cookware.jpg",
 	},
 	{
-		id:2,
+		id: 2,
 		name: "CAFÉ BRULÉ",
 		category: "Végétarien",
 		description:
@@ -24,7 +24,7 @@ const listRestaurants = [
 		img: "Image/restaurants/brulé-café.png",
 	},
 	{
-		id:3,
+		id: 3,
 		name: "LE KSAR",
 		category: "Marocain",
 		description:
@@ -36,7 +36,7 @@ const listRestaurants = [
 		img: "Image/restaurants/woman-arab-dish-restaurant.jpg",
 	},
 	{
-		id:3,
+		id: 3,
 		name: "CHEZ CÉSAR",
 		category: "Street Food",
 		description:
@@ -48,7 +48,7 @@ const listRestaurants = [
 		img: "https://images.unsplash.com/photo-1585773690161-7b1cd0accfcf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
 	},
 	{
-		id:4,
+		id: 4,
 		name: "LE KIOSQUE",
 		category: "Asiatique",
 		description: "Toutes les saveurs de l'asie dans votre assiette !",
@@ -60,7 +60,7 @@ const listRestaurants = [
 	},
 
 	{
-		id:5,
+		id: 5,
 		name: "FORNO GUSTO",
 		category: "Italien",
 		description:
