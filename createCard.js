@@ -83,4 +83,5 @@ function createCard(restaurant) {
 	return newCard;
 }
 
+
 export default createCard;
