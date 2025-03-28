@@ -47,17 +47,24 @@ function createCard(restaurant) {
 	newCardTitleCategory.classList.add("card-title-item");
 	newCardTextCategory.classList.add("card-title-text");
 
-	// Gestion du contenu des éléments à partir de l'objet Restaurant
-	newCardImg.src = restaurant.img;
-	newCardTitle.textContent = restaurant.name;
-	newCardDescription.textContent = restaurant.description;
-	newCardTitleDistance.textContent = "Distance";
-	newCardTextDistance.textContent = restaurant.distance;
-	newCardTitlePrice.textContent = "Prix";
-	newCardTextPrice.textContent = restaurant.price;
-	newCardTitleCategory.textContent = "Catégorie";
-	newCardTextCategory.textContent = restaurant.category;
-	newCardButton.textContent = "Visiter la page Google";
+// Gestion du contenu des éléments à partir de l'objet Restaurant
+newCardImg.src = restaurant.img
+newCardImg.alt = "Image du restaurant"
+newCardTitle.textContent = 
+newCardTitle.alt = " Titre du restaurant"
+newCardDescription.textContent =
+newCardDescription.alt = "Description du restaurant"
+
+newCardTitleDistance.textContent = "Distance";
+newCardTextDistance.textContent = restaurant.distance;
+
+newCardTitlePrice.textContent = "Prix";
+newCardTextPrice.textContent = restaurant.price;
+
+newCardTitleCategory.textContent = "Catégorie";
+newCardTextCategory.textContent = restaurant.category;
+
+newCardButton.textContent = "Visiter la page Google";
 
 	// Placements des éléments avec leur parent respectif
 	newCard.appendChild(newCardHeader);
