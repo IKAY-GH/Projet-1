@@ -19,6 +19,7 @@ selectCategory.addEventListener("change", (event) => {
 			: listRestaurants.filter(
 					(listRestaurants) => listRestaurants.category === event.target.value,
 				);
+	removeChildren(RestaurantsCards);
 	for (const element of foodCategory) {
 		lesRestaurants.appendChild(createCard(element));
 	}
@@ -26,10 +27,11 @@ selectCategory.addEventListener("change", (event) => {
 
 // Attrape la zone des cartes restaurants
 
-const RestaurantsCards = document.querySelector(".RestaurantsCards")
+const RestaurantsCards = document.querySelector(".RestaurantsCards");
+removeChildren(RestaurantsCards);
 
-for (let i = 0; i<listRestaurants.length; i++) {
-    const restaurant = listRestaurants[i];
+for (let i = 0; i < listRestaurants.length; i++) {
+	const restaurant = listRestaurants[i];
 
-    RestaurantsCards.appendChild(createCard(restaurant))
+	RestaurantsCards.appendChild(createCard(restaurant));
 }
