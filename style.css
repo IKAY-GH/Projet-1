@@ -413,6 +413,65 @@ footer a {
 		font-weight: 700;
 	}
 }
+/* <!-- ---------------------- CARDS RESTAURANTS ---------------------- --> */
+.RestaurantsCards {
+	display: grid;
+	margin: 0;
+	gap: 10px;
+	grid-template-columns: repeat(auto-fill, );
+}
+
+.Restaurant {
+	max-width: 85ch;
+	margin: 0;
+	padding: 01rem;
+	display: flex;
+	justify-content: space-between;
+	background-color: #a306b6;
+	border-radius: black;
+	border-radius: 30px;
+	border-width: thick;
+	color: aliceblue;
+}
+
+.card-header {
+	justify-content: flex-start;
+}
+
+.card-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.card-title {
+	font-size: white;
+}
+
+.card-features {
+	display: flex;
+	flex-direction: wrap;
+	justify-content: space-between;
+}
+
+.card-description {
+	border-radius: 10px;
+}
+
+.card-distance {
+	border-radius: 10px;
+}
+
+.card-price {
+	border-radius: 10px;
+}
+
+.card-category {
+	border-radius: 10px;
+}
+
+/* <!-- ---------------------- 	MEDIA  ---------------------- --> */
 
 @media screen and (min-width: 900px) {
 	header {

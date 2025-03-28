@@ -4,7 +4,7 @@ import { removeChildren } from "./utils.js";
 
 const menuHamburger = document.querySelector(".menu_hamburger");
 const navLinks = document.querySelector(".nav_links");
-const lesRestaurants = document.querySelector("#Les_restaurants");
+const lesrestaurants = document.querySelector(".Les_restaurants");
 const RestaurantsCards = document.querySelector(".RestaurantsCards");
 const randomContainer = document.querySelector(".random-container");
 const button = document.querySelector(".btn");
