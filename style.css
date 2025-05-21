@@ -345,72 +345,124 @@ footer a {
 	align-items: center;
 }
 
-/* <!-- ---------------------- CARDS RESTAURANTS ---------------------- --> */
+/* ---------------------- CARDS RESTAURANTS ---------------------- */
 .RestaurantsCards {
 	display: flex;
-	justify-content: space-between;
-	margin: 0;
 	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	width: 100vw;
 }
 
 .Restaurant {
-	max-width: 85ch;
-	margin: 0 auto;
-	padding: 0;
 	display: flex;
-	flex: 1;
-	border-radius: 30px;
-	background-color: #a306b6;
-	align-items: center;
+	flex-direction: column;
+	width: 320px;
+	max-width: 320px;
+	height: 240px;
+	min-height: 240px;
+	max-height: 240px;
+	margin-bottom: 24px;
+	background: #fff;
+	border-radius: 16px;
+	box-shadow: 0 2px 8px rgba(163, 6, 182, 0.08);
+	overflow: hidden;
 }
 
 .card-header {
-	justify-content: flex-start;
-	flex: 3;
+	width: 100%;
+	height: 100px;
+	min-height: 100px;
+	max-height: 100px;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #f7f0fa;
+}
+
+.card-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 0;
 }
 
 .card-body {
-	flex: 2;
-	display: grid;
-	grid-template-columns: repeat(auto-fill);
-	gap: 40px;
+	flex: 1 1 auto;
+	padding: 12px 10px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
 }
 
 .card-title {
-	font-size: 40px;
-	text-align: center;
+	font-size: 1.1rem;
+	font-weight: 700;
+	color: #a306b6;
+	margin-bottom: 8px;
 }
+
+.card-description {
+	font-size: 0.9rem;
+	color: #333;
+	margin-bottom: 10px;
+}
+
 .card-features {
-	display: grid;
-	gap: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin-bottom: 10px;
 }
-.card-img {
-	width: 400px;
-	border-radius: 100px;
-	margin-right: 30px;
+
+.card-distance,
+.card-price,
+.card-category {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.card-title-item {
+	font-size: 0.9rem;
+	font-weight: 600;
+	color: #a306b6;
+	margin-bottom: 2px;
+}
+
+.card-title-text {
+	font-size: 0.9rem;
+	color: #444;
 }
 
 .card-button {
-	height: 40px;
-	background-color: white;
-	justify-content: center;
-	align-items: center;
+	align-self: flex-start;
+	background: #a306b6;
+	border: none;
+	border-radius: 8px;
+	padding: 6px 12px;
+	cursor: pointer;
+	transition: background 0.2s;
+	font-size: 0.9rem;
 }
 
+.card-button:hover {
+	background: #7d048a;
+}
+
+.card-button a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 0.9rem;
+}
+
+/* ---------------------- 	MEDIA  ---------------------- */
+
 @media screen and (max-width: 480px) {
-	.card-img {
-		width: 60vw;
-	}
-
-	.RestaurantsCards {
-		width: 80vw;
-	}
-
-	.Restaurant {
-		display: flex;
-		flex-direction: column;
-	}
-
 	.navbar {
 		padding: 0;
 	}
@@ -452,70 +504,99 @@ footer a {
 		font-size: 1rem;
 		font-weight: 700;
 	}
-}
-/* <!-- ---------------------- CARDS RESTAURANTS ---------------------- --> */
-.RestaurantsCards {
-	display: grid;
-	margin: 0;
-	gap: 10px;
-	grid-template-columns: repeat(auto-fill, );
+
+	.Restaurant {
+		flex-direction: column;
+		max-width: 98vw;
+	}
+	.card-header {
+		justify-content: center;
+		padding: 16px 0;
+	}
+
+	.card-body {
+		padding: 18px 10px;
+	}
 }
 
-.Restaurant {
-	max-width: 85ch;
-	margin: 0;
-	padding: 01rem;
-	display: flex;
-	justify-content: space-between;
-	background-color: #a306b6;
-	border-radius: black;
-	border-radius: 30px;
-	border-width: thick;
-	color: aliceblue;
+@media screen and (max-width: 900px) {
+	.RestaurantsCards {
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	.Restaurant {
+		flex-direction: column;
+		width: 80vw;
+		max-width: 80vw;
+		height: 330px;
+		min-height: 330px;
+		max-height: 330px;
+		margin-bottom: 24px;
+	}
+	.card-header {
+		width: 100%;
+		height: 120px;
+		min-height: 120px;
+		max-height: 120px;
+		padding: 0;
+	}
+	.card-img {
+		width: 100%;
+		height: 100%;
+		max-width: 100%;
+		max-height: 100%;
+		object-fit: cover;
+		border-radius: 0;
+	}
+	.card-body {
+		flex: 1 1 auto;
+		padding: 18px 10px;
+		height: 320px;
+		min-height: 320px;
+		max-height: 320px;
+		overflow: visible;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+	.card-features {
+		display: flex;
+		flex-direction: row;
+		gap: 12px;
+		margin-bottom: 10px;
+	}
 }
-
-.card-header {
-	justify-content: flex-start;
-}
-
-.card-body {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	align-items: center;
-}
-
-.card-title {
-	font-size: white;
-}
-
-.card-features {
-	display: flex;
-	flex-direction: wrap;
-	justify-content: space-between;
-}
-
-.card-description {
-	border-radius: 10px;
-}
-
-.card-distance {
-	border-radius: 10px;
-}
-
-.card-price {
-	border-radius: 10px;
-}
-
-.card-category {
-	border-radius: 10px;
-}
-
-/* <!-- ---------------------- 	MEDIA  ---------------------- --> */
 
 @media screen and (min-width: 900px) {
-	.map {
-		width: 100vw;
+	.RestaurantsCards {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 24px;
+	}
+	.Restaurant {
+		width: 350px;
+		max-width: 350px;
+		height: 380px;
+		min-height: 380px;
+		max-height: 380px;
+		margin: 0 12px 24px 12px;
+	}
+	.card-header {
+		height: 170px;
+		min-height: 170px;
+		max-height: 170px;
+	}
+	.card-body {
+		height: 170px;
+		min-height: 170px;
+		max-height: 170px;
+		padding: 18px 16px;
+	}
+	.card-features {
+		flex-direction: row;
+		gap: 12px;
 	}
 
 	header {
@@ -557,7 +638,6 @@ footer a {
 	}
 
 	.nav_footer ul {
-		flex-direction: column;
-		gap: 0px;
+		font-size: 0.8rem;
 	}
 }
